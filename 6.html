@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div id="root"></div>
+
+<script>
+      let root = document.getElementById('root')
+
+  
+    //root.append('li') ㅇ string
+    //root.createElement('li') x
+    let ele = document.createElement('div')
+    root.appendChild(ele)
+    let text = document.textContent('me')
+    // document.textContent를 document.createTextNode로 적어야 한다
+    //ele.appendChild(text) x
+    ele.textContent = 'dd'
+
+/*     let root = document.getElementById('root');
+let ele = document.createElement('div');
+let text = 'me';
+ele.textContent = text;
+root.appendChild(ele); 
+
+*/
+
+</script>
+
+
+</body>
+</html>

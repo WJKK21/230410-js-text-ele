@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="root"></div>
+
+  <script>
+    let root = document.getElementById('root')
+    let element = document.createElement('div')
+    
+    
+    function dd () {
+    let time = new Date()
+    let y = time.getFullYear ()
+    let m = time.getMonth () + 1
+    let d = time.getDate ()
+    let h = time.getHours ()
+    let M = time.getMinutes ()
+    let s = time.getSeconds ()
+    let dd = time.getDay ()
+  /*   if (dd == 1) {
+      '월'
+    } else {
+      '화'
+    } */
+    return `${y}년 ${m}월 ${d}일 ${h}시 ${M}분 ${s}초 ${dd}요일`
+    }
+
+    console.log(dd())
+/* 
+
+    root.appendChild(element)
+    element.textContent = dd()
+
+    setInterval(updateClock, 1000); */
+
+
+    root.appendChild(element)
+
+// 시계 업데이트 함수
+function updateClock() {
+  element.textContent = dd()
+}
+
+// 매 초마다 시계 업데이트
+setInterval(updateClock, 1000);
+
+
+/*  let weekDay;
+  if (dd === 0) {
+    weekDay = "일요일";
+  } else if (dd === 1) {
+    weekDay = "월요일";
+  } else if (dd === 2) {
+    weekDay = "화요일";
+  } else if (dd === 3) {
+    weekDay = "수요일";
+  } else if (dd === 4) {
+    weekDay = "목요일";
+  } else if (dd === 5) {
+    weekDay = "금요일";
+  } else if (dd === 6) {
+    weekDay = "토요일";
+  } else {
+    weekDay = "";
+  }
+
+  return `${y}년 ${m}월 ${d}일 ${h}시 ${M}분 ${s}초 ${weekDay}`
+}
+let weekDay;
+  switch (dd) {
+    case 0:
+      weekDay = "일요일";
+      break;
+    case 1:
+      weekDay = "월요일";
+      break;
+    case 2:
+      weekDay = "화요일";
+      break;
+    case 3:
+      weekDay = "수요일";
+      break;
+    case 4:
+      weekDay = "목요일";
+      break;
+    case 5:
+      weekDay = "금요일";
+      break;
+    case 6:
+      weekDay = "토요일";
+      break;
+    default:
+      weekDay = "";
+  }
+
+  return `${y}년 ${m}월 ${d}일 ${h}시 ${M}분 ${s}초 ${weekDay}`
+}*/
+
+  </script> 
+</body>
+</html>

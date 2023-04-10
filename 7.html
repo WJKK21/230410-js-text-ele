@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="root"></div>
+
+  <script>
+    let root = document.getElementById('root')
+    let arry = [1,2,3,4,5,6,7,8,9,10]
+
+/*    for (let i = 0; i <10; i++) {
+      let ele = document.createElement('div')
+      
+      root.appendChild(ele)[i]
+      ele.textContent(arry)[i]
+    }
+    문법의 오류ㅠㅠ
+      for (let i =0; i< 10; i++) {
+    let ele = document.createElement('li')
+    root.appendChild(ele)
+    ele.textContent (arry[i])
+  }
+// textContetnt = '등호 사용해야됨'
+
+ */
+
+  for (let i = 0; i < arry.length; i++) {
+    let ele = document.createElement('div');
+    root.appendChild(ele);
+    ele.textContent = arry[i];
+  }
+
+  </script>
+
+</body>
+</html>

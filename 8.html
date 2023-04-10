@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="root"></div>
+
+  <script>
+   let root = document.getElementById('root')
+    //let element = document.createElement('li') for 문 안으로 넣아야됨
+   /*   let ary = [1,2,3,4,5]
+    let arry = ['1','2','3','4','5']
+    let a = Math.floor(Math.random()*10)
+
+    for (let i = 0; i < 10; i++) {
+      let element = document.createElement('li');
+      root.appendChild(element);
+    // element.textContent = a(ary[i])
+    element.textContent = a + arry[i] + ary[i];
+    }
+    */
+
+/*     let root = document.getElementById('root');
+let ary = ['1', '2', '3', '4', '5'];
+let length = ary.length;
+
+for (let i = 0; i < 10; i++) {
+  let index = Math.floor(Math.random() * 2);
+  let element = document.createElement('li');
+  root.appendChild(element);
+  element.textContent = ary[index];
+} chat gpt 의 대답
+ */
+
+  let arry = [1,2,3,4,5,6,7,8,9,0]
+
+  for (let i = 0; i<10; i++) {
+    let rd = Math.floor(Math.random()*10)
+    let ele = document.createElement('li')
+    root.appendChild(ele)
+    ele.textContent = arry[rd]
+  }
+
+  </script> 
+
+
+</body>
+</html>
